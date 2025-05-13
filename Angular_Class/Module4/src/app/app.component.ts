@@ -7,9 +7,8 @@ import { type InvestmentResults } from './investment-results/investment-results.
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   templateUrl: './app.component.html',
-  imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
+  standalone: false
 })
 export class AppComponent {
   investmentResults?: { year: number; interest: number; valueEndOfYear: number; annualInvestment: number; totalInterest: number; totalAmountInvested: number; }[];
